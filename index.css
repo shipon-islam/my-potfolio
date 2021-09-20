@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.body {
+  box-sizing: border-box;
+}
+.navi {
+  z-index: 666;
+}
+.band-name {
+  font-size: 1.8rem;
+}
+.band-name::first-letter {
+  color: red;
+  font-size: 2rem;
+}
+.first-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: cadetblue;
+  z-index: 0;
+}
+.img-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.img-container img {
+  width: 500px;
+}
+.intro {
+  padding-top: 300px;
+  padding-left: 100px;
+  width: 500px;
+}
+.about-image {
+  width: 100%;
+}
+.about-text {
+  line-height: 30px;
+  font-size: 1.4rem;
+}
+.social {
+  position: absolute;
+  bottom: 10px;
+  left: 90px;
+  z-index: 44444;
+}
+.social i {
+  margin: 10px 10px;
+}
+.social i:hover {
+  color: red;
+}
+.progress span {
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+.progress1 {
+  animation: html 5s linear infinite;
+}
+@keyframes html {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+.progress2 {
+  animation: css 5s linear infinite;
+}
+@keyframes css {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 65%;
+  }
+}
+.progress3 {
+  animation: bootstrap 5s linear infinite;
+}
+@keyframes bootstrap {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+.progress4 {
+  animation: javascript 5s linear infinite;
+}
+@keyframes javascript {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 65%;
+  }
+}
+.progress5 {
+  animation: jquery 5s linear infinite;
+}
+@keyframes jquery {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 88%;
+  }
+}
+.progress6 {
+  animation: react 5s linear infinite;
+}
+@keyframes react {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 77%;
+  }
+}
+.card:hover {
+  color: white;
+  background-color: rgba(30, 143, 255, 0.315);
+}
+
+.hr {
+  position: absolute;
+  bottom: -17px;
+  width: 100%;
+}
+
+.star {
+  animation: star 2s linear infinite;
+  color: red;
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+@keyframes star {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+footer {
+  background-color: #ddd;
+
+  text-transform: capitalize;
+}
+footer a {
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 380px) {
+  .down-footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: cadetblue;
+  }
+  #services,
+  #about,
+  #skill {
+    background-color: cadetblue;
+  }
+  .img-container {
+    z-index: -1;
+  }
+  .about-text {
+    font-size: 1rem;
+  }
+  .first-page {
+    width: 100%;
+    height: 100vh;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .about-peraHead {
+    text-align: center;
+  }
+  .social {
+    left: 40px;
+  }
+
+  .intro {
+    padding-top: 350px;
+    padding-left: 50px;
+    width: 100%;
+  }
+  .img-container img {
+    width: 400px;
+  }
+  .box {
+    display: grid;
+    place-items: center;
+  }
+  .navi ul {
+    padding-left: 25px;
+  }
+}
